@@ -684,3 +684,17 @@ footer {
     font-size: 14px;
     color: #64748b;
 }
+
+.program-image {
+    margin-bottom: 20px;
+}
+
+.program-image img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.program-card:hover .program-image img {
+    transform: scale(1.03);
+}
