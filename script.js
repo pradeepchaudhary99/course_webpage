@@ -13,7 +13,7 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-const targetDate = new Date("July 15, 2026 10:00:00").getTime();
+const targetDate = new Date("Feburary 28, 2026 10:00:00").getTime();
 
 const countdown = setInterval(function() {
 
