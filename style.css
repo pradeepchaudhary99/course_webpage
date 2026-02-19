@@ -862,3 +862,104 @@ footer {
     font-size: 24px;
     cursor: pointer;
 }
+
+/* ================= SEATS FLASH ================= */
+
+.seats-alert {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background: linear-gradient(45deg, #ef4444, #f97316);
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: center;
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.urgent-text {
+    color: #f7eeee;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.hero-text h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #94a3b8;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.hero-highlights span {
+    background: #1e293b;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #38bdf8;
+}
+.hero-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ================= COHORT ANNOUNCEMENT ================= */
+
+.cohort-announcement {
+    padding: 80px 0;
+    background: #1e293b;
+}
+
+.announcement-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.announcement-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.announcement-text p {
+    color: #94a3b8;
+    max-width: 500px;
+}
+
+.announcement-image {
+    position: relative;
+    flex: 1;
+}
+
+.announcement-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .announcement-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
