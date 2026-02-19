@@ -698,3 +698,131 @@ footer {
 .program-card:hover .program-image img {
     transform: scale(1.03);
 }
+
+.instagram-section {
+    padding: 100px 0;
+    background: #1e293b;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.instagram-media {
+    width: 100% !important;
+    min-width: 100% !important;
+}
+
+/* ================= FLOATING CIRCLE ================= */
+
+.floating-circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-circle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(45deg, #ff0000, #6366f1);
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.floating-circle a:hover {
+    transform: scale(1.1);
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(99, 102, 241, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}
+
+.floating-circle a {
+    animation: pulse 1s infinite;
+}
+
+/* ================= COUNTDOWN ================= */
+
+/* ================= RESPONSIVE COUNTDOWN ================= */
+
+.countdown-section {
+    padding: 20px 0;
+    text-align: center;
+    background: #1e293b;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 12px;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+.countdown div {
+    background: #0f172a;
+    padding: 12px 8px;
+    border-radius: 12px;
+}
+
+.countdown span {
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: bold;
+    color: #38bdf8;
+    display: block;
+}
+
+.countdown p {
+    font-size: clamp(10px, 2.5vw, 13px);
+    color: #94a3b8;
+    margin-top: 4px;
+}
+@media (max-width: 480px) {
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.section-subtitle {
+    max-width: 650px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #94a3b8;
+}
+.price-wrapper {
+    margin: 20px 0 5px 0;
+}
+
+.old-price {
+    font-size: 18px;
+    color: #94a3b8;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.offer-text {
+    font-size: 13px;
+    color: #22c55e;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
