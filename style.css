@@ -1049,3 +1049,50 @@ footer {
     background: #ea580c;
     transform: translateY(-3px);
 }
+
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #22c55e; /* Nice green */
+    font-weight: bold;
+}
+
+.faq-section {
+    margin-top: 60px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq details {
+    background: #141e29;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq p {
+    margin-top: 10px;
+    color: #e7e7e7;
+}
