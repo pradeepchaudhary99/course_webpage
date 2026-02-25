@@ -1096,3 +1096,20 @@ footer {
     margin-top: 10px;
     color: #e7e7e7;
 }
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+} */
+
+.faq-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;   /* controls width */
+    margin: 0 auto;     /* centers horizontally */
+    text-align: left;   /* keeps FAQ text aligned left */
+}
