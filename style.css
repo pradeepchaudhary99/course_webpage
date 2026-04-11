@@ -1167,3 +1167,22 @@ footer {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
+
+.testimonial-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.testimonial-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
